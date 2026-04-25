@@ -55,7 +55,7 @@ In linear search, the best case is finding the element in the very first positio
 **Example:**  
 Sorting a list using Merge Sort always takes Θ(n log n), regardless of the input.
 
-![](https://natancode.com/wp-content/uploads/2025/04/giphy.gif)
+
 
 Examples
 
@@ -88,8 +88,9 @@ public class Complexity {
 **Worst case:** O(n) (if the element is not in the list or is at the last position or after middle).
 
 Big-O Chart Example
+![Alt Text][my-image-ref]
 
-![](https://natancode.com/wp-content/uploads/2025/09/image-1024x695.png)
+[my-image-ref]: images/bigOComplexityChart.webp "Optional Title"
 
 This shows how, as input size increases, the computational cost grows very differently depending on the algorithm.
 
