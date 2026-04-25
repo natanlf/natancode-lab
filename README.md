@@ -1,6 +1,6 @@
 # 🧠 Engineering Notes by Natan
 
-A collection of practical projects, experiments, and technical explorations around backend engineering and scalable systems.
+A collection of practical projects, experiments, and technical explorations around software engineering and scalable systems.
 
 ---
 
