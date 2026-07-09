@@ -9,7 +9,7 @@ In Angular, **@Input** and **@Output** are essential decorators that facilitate 
 
 @Input
 
-![](https://natancode.com/wp-content/uploads/2025/02/input.png)
+![](../assets/images/input.png)
 
 It allows the child component to receive values from the parent component. The parent sets the value, and the child uses it.
 
@@ -17,7 +17,7 @@ The parent calls the child component, sending the value. The child component rec
 
 @Output
 
-![](https://natancode.com/wp-content/uploads/2025/02/output.png)
+![](../assets/images/output.png)
 
 It allows the child component to send data to the parent component.
 
@@ -87,4 +87,4 @@ export class ChildComponent {
 
 This allows for efficient communication between Angular components!
 
-![](https://natancode.com/wp-content/uploads/2024/11/giphy.webp)
+![](../assets/images/giphy.webp)

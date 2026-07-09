@@ -12,7 +12,7 @@ But to use it effectively, you need to master three essential concepts:
 *   **Partitions**
 *   **Offsets**
 
-![](https://natancode.com/wp-content/uploads/2025/12/Kafka-topic-partition-and-offsets.jpg)
+![](../assets/images/Kafka-topic-partition-and-offsets.jpg)
 
 These three elements form the foundation of how Kafka’s entire architecture works. Let’s break each one down with simple examples, real-world scenarios, and analogies.
 
@@ -130,4 +130,4 @@ Reading control and reprocessing
 🔸 Writes are distributed across partitions.  
 🔸 Partitions determine the system’s scalability.
 
-![](https://natancode.com/wp-content/uploads/2025/12/giphy.gif)
+![](../assets/images/giphy.gif)

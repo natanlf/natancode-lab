@@ -7,7 +7,7 @@ tags: ["Angular", "Angular 17", "Javascript", "Typescript"]
 ---
 It's a way of **communication** between **_TypeScript code_** and _**HTML template**_.
 
-![](https://natancode.com/wp-content/uploads/2024/03/Databinding.jpeg)
+![](../assets/images/Databinding.jpeg)
 
 Let's see an example below. I created a component called "user".
 
@@ -94,6 +94,6 @@ export class AppModule { }
 
 Let's see the project running:
 
-![](https://natancode.com/wp-content/uploads/2024/03/databinding.gif)
+![](../assets/images/databinding.gif)
 
-![](https://natancode.com/wp-content/uploads/2023/11/image-12.gif)
+![](../assets/images/image-12.gif)

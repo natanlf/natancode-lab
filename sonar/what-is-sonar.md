@@ -15,25 +15,25 @@ Writing clean and secure code is a challenge. While manual code reviews are an o
 
 Some companies that use it include
 
-![](https://natancode.com/wp-content/uploads/2024/01/image.png)
+![](../assets/images/image.png)
 
 Support
 
-![](https://natancode.com/wp-content/uploads/2024/01/image-1.png)
+![](../assets/images/image-1.png)
 
 Sonar products
 
 There are three Sonar products that we can use, and they all share the same goal of identifying issues to keep the code clean and secure:
 
-![](https://natancode.com/wp-content/uploads/2024/01/image-4.png)
+![](../assets/images/image-4.png)
 
 It is installed in the IDE and performs real-time code analysis directly within the IDE to identify issues.
 
-![](https://natancode.com/wp-content/uploads/2024/01/image-5.png)
+![](../assets/images/image-5.png)
 
 It can be installed on the company's server for teams to use and can be integrated into the pipeline.
 
-![](https://natancode.com/wp-content/uploads/2024/01/image-6.png)
+![](../assets/images/image-6.png)
 
 It's a cloud-based solution that can be integrated into the pipeline.
 
@@ -43,15 +43,15 @@ Quality Gate
 
 It indicates whether the code has reached a standard good enough for release. Green means it's good, and red means it needs adjustments because it's not good enough for release.
 
-![](https://natancode.com/wp-content/uploads/2024/01/image-7.png)
+![](../assets/images/image-7.png)
 
 Image representing code ready for release.
 
-![](https://natancode.com/wp-content/uploads/2024/01/image-16.png)
+![](../assets/images/image-16.png)
 
 Sonar Flow
 
-![](https://natancode.com/wp-content/uploads/2024/01/image-3.png)
+![](../assets/images/image-3.png)
 
 I'll summarize the workflow.
 
@@ -61,59 +61,59 @@ Sonar Lint
 
 In the following example, I demonstrate how to install SonarLint in IntelliJ.
 
-![](https://natancode.com/wp-content/uploads/2024/01/image-8.png)
+![](../assets/images/image-8.png)
 
 In my case, I already have it installed.
 
 It resides in the upper right corner and also underlines the code when it detects any issue.
 
-![](https://natancode.com/wp-content/uploads/2024/01/image-9.png)
+![](../assets/images/image-9.png)
 
 Clicking on the icon provides more information about the issue, including examples of how to resolve it.
 
-![](https://natancode.com/wp-content/uploads/2024/01/image-10.png)
+![](../assets/images/image-10.png)
 
 After resolving the issue, the icon turns green, indicating that everything is fine in this file.
 
-![](https://natancode.com/wp-content/uploads/2024/01/image-11.png)
+![](../assets/images/image-11.png)
 
 Sonar Qube
 
 The installation is simple, and for testing purposes, it can be done using Docker. After installation, it's necessary to create a project, and through the command line, we can send the code for analysis.
 
-![](https://natancode.com/wp-content/uploads/2024/01/image-15.png)
+![](../assets/images/image-15.png)
 
 Example of usage in SonarQube
 
 After the code analysis, we can identify the issues.
 
-![](https://natancode.com/wp-content/uploads/2024/01/image-12.png)
+![](../assets/images/image-12.png)
 
 Clicking on the issue provides more details.
 
-![](https://natancode.com/wp-content/uploads/2024/01/image-13.png)
+![](../assets/images/image-13.png)
 
-![](https://natancode.com/wp-content/uploads/2024/01/image-14.png)
+![](../assets/images/image-14.png)
 
 Monitoring
 
 We can also monitor the quality.
 
-![](https://natancode.com/wp-content/uploads/2024/01/image-17-300x148.png)
+![](../assets/images/image-17-300x148.png)
 
 Security
 
 It's essential to note that the OWASP project is present in Sonar, which is crucial for promoting secure code.
 
-![](https://natancode.com/wp-content/uploads/2024/01/image-18-300x152.png)
+![](../assets/images/image-18-300x152.png)
 
 Updates
 
 In recent versions, there have been changes in issue types and severity.
 
-![](https://natancode.com/wp-content/uploads/2024/01/image-19-300x103.png)
+![](../assets/images/image-19-300x103.png)
 
-![](https://natancode.com/wp-content/uploads/2024/01/image-20-300x191.png)
+![](../assets/images/image-20-300x191.png)
 
 Conclusion
 

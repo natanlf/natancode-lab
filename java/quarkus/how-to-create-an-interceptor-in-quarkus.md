@@ -11,7 +11,7 @@ In this post, we’ll explore how to implement a **simple interceptor in Quarkus
 
 Hands on
 
-![](https://natancode.com/wp-content/uploads/2024/12/giphy.webp)
+![](../assets/images/giphy.webp)
 
 The example below demonstrates a filter that intercepts **incoming HTTP requests** and **outgoing responses**. We use the `@Provider` annotation to register the filter in the Quarkus context:
 

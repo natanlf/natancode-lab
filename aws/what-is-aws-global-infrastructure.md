@@ -7,7 +7,7 @@ tags: ["AWS", "Cloud"]
 ---
 AWS is able to offer services that are fast, resilient, and accessible from anywhere in the world. This is possible thanks to its **global infrastructure** — one of Amazon Web Services' greatest advantages. The following image helps illustrate how it works.
 
-![](https://natancode.com/wp-content/uploads/2025/04/AWS-Global-Infrastructure.png)
+![](../assets/images/AWS-Global-Infrastructure.png)
 
 Regions
 

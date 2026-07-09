@@ -10,15 +10,15 @@ Introduction
 
 We have two directions: **_row_** and _**column**_. We can specify the direction using the `flex-direction` property. There are two axes: the **main axis** and the **cross axis**. I'll illustrate this with an example to make it easier to understand.
 
-![](https://natancode.com/wp-content/uploads/2023/11/image-8.gif)
+![](../assets/images/image-8.gif)
 
 For example if I set **_flex-direction: row_**, the **main axis** will be the **row**.
 
-![](https://natancode.com/wp-content/uploads/2023/11/Main-axis-row.png)
+![](../assets/images/Main-axis-row.png)
 
 Therefore the **cross axis** will be **column**.
 
-![](https://natancode.com/wp-content/uploads/2023/11/Cross-axis-row.png)
+![](../assets/images/Cross-axis-row.png)
 
 Let's do some examples.
 
@@ -70,11 +70,11 @@ This html references a css file with the styles.
 
 This is the result:
 
-![](https://natancode.com/wp-content/uploads/2023/11/imagem_2023-11-11_183805323.png)
+![](../assets/images/imagem_2023-11-11_183805323.png)
 
 The boxes are too close together, and I'd like to add space between them and the edges. How can I achieve this?
 
-![](https://natancode.com/wp-content/uploads/2023/11/image-9.gif)
+![](../assets/images/image-9.gif)
 
 Now, I'll apply the following code to the container: `justify-content: space-evenly;`.
 
@@ -90,7 +90,7 @@ Now, I'll apply the following code to the container: `justify-content: space-eve
 }
 ```
 
-![justify-content: space-evenly](https://natancode.com/wp-content/uploads/2023/11/image-4.png)
+![justify-content: space-evenly](../assets/images/image-4.png)
 
 The `justify-content` property affects changes along the **main axis**, which, in this case, is the **row**.
 
@@ -111,7 +111,7 @@ However, this doesn't provide the desired result. I want to center the items. To
 }
 ```
 
-![](https://natancode.com/wp-content/uploads/2023/11/imagem_2023-11-11_191238660.png)
+![](../assets/images/imagem_2023-11-11_191238660.png)
 
 Conclusion
 

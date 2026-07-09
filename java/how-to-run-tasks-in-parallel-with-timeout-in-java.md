@@ -9,7 +9,7 @@ The use of Threads is essential to improving the performance and responsiveness 
 
 Imagine the following scenario where it is necessary to fetch information from different APIs, with an async request for each API. There is also a need to wait for a timeout for each request. This scenario describes the example below.
 
-![](https://natancode.com/wp-content/uploads/2024/12/giphy-1.webp)
+![](../assets/images/giphy-1.webp)
 
 Hands on
 
@@ -106,7 +106,7 @@ List<CompletableFuture<String>> futures = List.of(
 
 With the values provided above, we have the following result:
 
-![](https://natancode.com/wp-content/uploads/2024/12/image.png)
+![](../assets/images/image.png)
 
 Since one thread took more than 3 seconds to execute, a timeout occurred.
 
@@ -122,7 +122,7 @@ Since one thread took more than 3 seconds to execute, a timeout occurred.
 
 Now we set the maximum to 3 seconds, and we have the following result.
 
-![](https://natancode.com/wp-content/uploads/2024/12/image-1.png)
+![](../assets/images/image-1.png)
 
 No timeout occurred because no thread exceeded 3 seconds.
 
@@ -130,4 +130,4 @@ No timeout occurred because no thread exceeded 3 seconds.
 
 This example is useful for simulating high-load scenarios or external services with time limits. It covers thread management, timeouts, and best practices for resource cleanup.
 
-![](https://natancode.com/wp-content/uploads/2024/12/giphy-88d6279f-446f-411f-b232-2414d8318633.webp)
+![](../assets/images/giphy-88d6279f-446f-411f-b232-2414d8318633.webp)

@@ -20,7 +20,7 @@ const routes: Routes = [
 
 In the new version of **Angular 17** we can use **Deferrable Views**, so we can do **lazy loading**.
 
-![](https://natancode.com/wp-content/uploads/2023/11/image-8.gif)
+![](../assets/images/image-8.gif)
 
 Practice
 
@@ -35,7 +35,7 @@ Let's see **@defer block**.
 
 I created a component and used it in **@defer block**.
 
-![](https://natancode.com/wp-content/uploads/2023/12/image.png)
+![](../assets/images/image.png)
 
 The content of the main **@defer block** is the section of content that is **lazily loaded**.
 
@@ -51,7 +51,7 @@ There are some interesting features that can be used like **@placeholder**. "By 
 
 In the code above we have the **@defer block** and the **@placeholder block**. Minimum is an optional parameter that informs the minimum time that the placeholder should be displayed.
 
-![](https://natancode.com/wp-content/uploads/2023/12/defer-placeholder.gif)
+![](../assets/images/defer-placeholder.gif)
 
 Triggers
 
@@ -67,7 +67,7 @@ When the **@defer block** is triggered, this replaces the content of the placeho
 
 In this example the placeholder is displayed until the hover event happens, when the hover happens the content of the **@defer block** is displayed.
 
-![](https://natancode.com/wp-content/uploads/2023/12/defer-placeholder-hover.gif)
+![](../assets/images/defer-placeholder-hover.gif)
 
 Let's see an example with when.
 
@@ -79,7 +79,7 @@ Let's see an example with when.
 }
 ```
 
-![](https://natancode.com/wp-content/uploads/2023/12/image-1.png)
+![](../assets/images/image-1.png)
 
 As the condition is false, it does not show the contents of the @defer block.
 
@@ -91,7 +91,7 @@ As the condition is false, it does not show the contents of the @defer block.
 }
 ```
 
-![](https://natancode.com/wp-content/uploads/2023/12/image-2.png)
+![](../assets/images/image-2.png)
 
 As the condition is true, the contents of the **@defer block** are displayed.
 

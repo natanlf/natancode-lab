@@ -11,11 +11,11 @@ This post is a continuation of the previous one; if you have any questions, feel
 
 Let's practice
 
-![](https://natancode.com/wp-content/uploads/2023/10/image-2.gif)
+![](../assets/images/image-2.gif)
 
 We can use a Maven plugin, and there is a repository that can assist us with this: [https://github.com/spotify/dockerfile-maven](https://github.com/spotify/dockerfile-maven)
 
-![](https://natancode.com/wp-content/uploads/2024/11/image-9.png)
+![](../assets/images/image-9.png)
 
 This way, we can copy the plugin code to paste into the project's `POM.xml` and make the necessary modifications. To avoid creating an image every time we build the project, we will use **Profiles**, allowing us to choose when to create the image.
 
@@ -99,7 +99,7 @@ CMD ["java", "-jar", "api.jar"]
 
 By running the following command, we can see that no Docker image was generated.
 
-![](https://natancode.com/wp-content/uploads/2024/11/image-15.png)
+![](../assets/images/image-15.png)
 
 To create the image, we must run the command.
 
@@ -109,8 +109,8 @@ mvn package -Pdocker
 
 Note that "docker" is the ID name I used in the profile created in the pom.xml file.
 
-![](https://natancode.com/wp-content/uploads/2024/11/image-16.png)
+![](../assets/images/image-16.png)
 
 In this way, it's possible to create the image.
 
-![](https://natancode.com/wp-content/uploads/2024/11/image-17.png)
+![](../assets/images/image-17.png)

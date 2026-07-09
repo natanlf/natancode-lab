@@ -137,13 +137,13 @@ public class Employee {
 
 Let's observe what happens when the project starts.
 
-![](https://natancode.com/wp-content/uploads/2024/09/Starting-the-Spring-Project-1024x359.png)
+![](../assets/images/Starting-the-Spring-Project-1024x359.png)
 
 * * *
 
 There are no migrations, and a table called "flyway\_schema\_history" was created in our database. What does it do?
 
-![](https://natancode.com/wp-content/uploads/2023/11/image-1.gif)
+![](../assets/images/image-1.gif)
 
 * * *
 
@@ -155,7 +155,7 @@ Inside the `resources` folder, we need to create two more folders: `db/migration
 
 Inside the `migration` folder, we can create the migration file. We need to follow this structure: "V001\_\_create\_initial\_tables.sql".
 
-![](https://natancode.com/wp-content/uploads/2024/09/resources.png)
+![](../assets/images/resources.png)
 
 * * *
 
@@ -188,13 +188,13 @@ CREATE TABLE `employee` (
 
 When running the application, we get the following result:
 
-![](https://natancode.com/wp-content/uploads/2024/09/first-migration-1024x275.png)
+![](../assets/images/first-migration-1024x275.png)
 
 * * *
 
 The migration was executed, and we can see in the _**"flyway\_schema\_history"**_ table the history of migrations.
 
-![](https://natancode.com/wp-content/uploads/2024/09/flyway_schema_history.png)
+![](../assets/images/flyway_schema_history.png)
 
 * * *
 
@@ -214,12 +214,12 @@ alter table `employee` add cellphone varchar(15);
 
 Upon execution, we get the following result:
 
-![](https://natancode.com/wp-content/uploads/2024/09/second-migration-1024x420.png)
+![](../assets/images/second-migration-1024x420.png)
 
 * * *
 
-![](https://natancode.com/wp-content/uploads/2024/09/flyway_schema_history-2.png)
+![](../assets/images/flyway_schema_history-2.png)
 
 * * *
 
-![](https://natancode.com/wp-content/uploads/2023/11/image-11.gif)
+![](../assets/images/image-11.gif)

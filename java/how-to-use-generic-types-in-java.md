@@ -194,4 +194,4 @@ Since we are talking about generic types, we can create our own types and use ge
 
 Generics improve code reusability and readability, making it clearer and more flexible.
 
-![](https://natancode.com/wp-content/uploads/2024/12/giphy-1.webp)
+![](../assets/images/giphy-1.webp)

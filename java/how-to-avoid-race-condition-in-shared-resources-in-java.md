@@ -20,7 +20,7 @@ Why use shared resources between threads?
 
 There are many reasons, but a common example is an event emitter that publishes messages to a queue, while multiple threads listen to the queue to process the events.
 
-![](https://natancode.com/wp-content/uploads/2025/06/worker.png)
+![](../assets/images/worker.png)
 
 This means that the **Queue** (a data structure stored in the heap memory) is a shared resource between threads. This enables efficient CPU usage and allows for low latency, as there's no need to create a new thread for every new event.
 
@@ -30,7 +30,7 @@ https://natancode.com/2024/12/10/how-to-run-tasks-in-parallel-with-timeout-in-ja
 
 Hands on
 
-![](https://natancode.com/wp-content/uploads/2024/12/giphy-2.webp)
+![](../assets/images/giphy-2.webp)
 
 In the following example, we simulate a company’s stock management system, where we can increment (when the company receives products) or decrement (when the company sells products) the stock count.
 
@@ -292,4 +292,4 @@ Conclusion
 
 This code shows how to and how not to manipulate variables shared between threads. It is excellent for educational purposes and shows in a practical way the importance of concurrency control.
 
-![](https://natancode.com/wp-content/uploads/2024/11/giphy.webp)
+![](../assets/images/giphy.webp)

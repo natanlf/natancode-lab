@@ -373,7 +373,7 @@ And what if we send this JSON in the request?
 }
 ```
 
-![](https://natancode.com/wp-content/uploads/2023/11/image-9.gif)
+![](../assets/images/image-9.gif)
 
 We get the following error.
 

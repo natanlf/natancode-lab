@@ -195,8 +195,8 @@ mvn quarkus:dev
 
 I used postman to make the request.
 
-![](https://natancode.com/wp-content/uploads/2024/03/image-300x186.png)
+![](../assets/images/image-300x186.png)
 
-![](https://natancode.com/wp-content/uploads/2024/03/image-1-300x129.png)
+![](../assets/images/image-1-300x129.png)
 
 That was a simple example. However, before creating a custom annotation, check if the validation you need already exists in the validation dependency you're using. This helps avoid unnecessary work.

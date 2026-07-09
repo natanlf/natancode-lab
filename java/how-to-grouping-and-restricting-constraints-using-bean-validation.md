@@ -244,7 +244,7 @@ public class CategoryController {
 
 This way, we can perform validations using groups.
 
-![](https://natancode.com/wp-content/uploads/2024/10/image-1.webp)
+![](../assets/images/image-1.webp)
 
 Converting constraint groups for cascading validation with @ConvertGroup
 
@@ -318,4 +318,4 @@ Conclusion
 
 In this post we saw how to do validation by groups, so we can use the same class in different places, this brings more flexibility and code reuse.
 
-![](https://natancode.com/wp-content/uploads/2024/11/giphy.webp)
+![](../assets/images/giphy.webp)

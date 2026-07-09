@@ -136,7 +136,7 @@ app.component.html
 
 This way we can call it in the HTML.
 
-![](https://natancode.com/wp-content/uploads/2024/07/directive-angular.gif)
+![](../assets/images/directive-angular.gif)
 
 * * *
 

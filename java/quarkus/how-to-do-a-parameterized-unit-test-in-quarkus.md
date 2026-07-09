@@ -13,7 +13,7 @@ Requirements
 
 I’m using JDK 17, Intellij and Quarkus Version 3.4 on the project.
 
-![](https://natancode.com/wp-content/uploads/2023/10/image.png)
+![](../assets/images/image.png)
 
 JDK17
 
@@ -138,7 +138,7 @@ It's worth noting that `@ValueSource` can also accommodate other field types suc
 
 The test method accepts these parameters and runs the test for each of them.
 
-![ParameterizedTest ](https://natancode.com/wp-content/uploads/2023/11/image-2.png)
+![ParameterizedTest ](../assets/images/image-2.png)
 
 Conclusion
 

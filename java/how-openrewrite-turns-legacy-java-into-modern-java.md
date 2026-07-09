@@ -160,7 +160,7 @@ public class Main {
 }
 ```
 
-![](https://natancode.com/wp-content/uploads/2024/10/image-1.webp)
+![](../assets/images/image-1.webp)
 
 Conclusion
 
@@ -176,4 +176,4 @@ If you maintain large, long-lived, or legacy Java systems, OpenRewrite enables s
 
 More information:
 
-![](https://natancode.com/wp-content/uploads/2024/11/giphy.webp)
+![](../assets/images/giphy.webp)
