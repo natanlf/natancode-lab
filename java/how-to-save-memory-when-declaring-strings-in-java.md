@@ -20,7 +20,7 @@ In this article, we will look at the difference between each way of creating a S
 
 How does it work?
 
-![String Pool](../assets/images/String-Pool-1.png)
+![String Pool](https://natancode.com/wp-content/uploads/2025/11/String-Pool-1.png)
 
 String Literal
 
@@ -89,4 +89,4 @@ Conclusion
 
 To save memory, it’s recommended to declare Strings using literals, as it’s the best way to avoid excessive memory consumption. The String Pool is crucial for more efficient memory usage, and we don’t need to worry about changing the value since String is immutable.
 
-![](../assets/images/giphy.webp)
+![](https://natancode.com/wp-content/uploads/2024/11/giphy.webp)

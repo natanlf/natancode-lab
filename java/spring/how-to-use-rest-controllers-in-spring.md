@@ -88,4 +88,4 @@ public class StateController {
 
 *   **@ResponseStatus(HttpStatus.NO\_CONTENT)**: It defines that the HTTP return code will be _**204 (No Content)**_ when a resource is successfully deleted.
 
-![](../assets/images/image-6.gif)
+![](https://natancode.com/wp-content/uploads/2023/11/image-6.gif)

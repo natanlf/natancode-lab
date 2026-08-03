@@ -33,9 +33,9 @@ The **@if** block conditionally displays its content when its condition expres
 
 The result is:
 
-![](../assets/images/image-13-300x215.png)
+![](https://natancode.com/wp-content/uploads/2023/11/image-13-300x215.png)
 
-![](../assets/images/image-12.gif)
+![](https://natancode.com/wp-content/uploads/2023/11/image-12.gif)
 
 I copied the example below from the documentation, which illustrates the old way:
 
@@ -95,7 +95,7 @@ The value of the `track` expression determines a key used to associate array i
 
 The result is:
 
-![](../assets/images/image-14-276x300.png)
+![](https://natancode.com/wp-content/uploads/2023/11/image-14-276x300.png)
 
 **@empty** block
 
@@ -118,7 +118,7 @@ items2 = new Array;
 
 The result is:
 
-![](../assets/images/image-15-300x66.png)
+![](https://natancode.com/wp-content/uploads/2023/11/image-15-300x66.png)
 
 **@switch** block - selection
 
@@ -147,7 +147,7 @@ month = "november";
 
 The result is:
 
-![](../assets/images/image-16-300x213.png)
+![](https://natancode.com/wp-content/uploads/2023/11/image-16-300x213.png)
 
 Conclusion
 

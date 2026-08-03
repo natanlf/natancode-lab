@@ -11,7 +11,7 @@ Let’s go over more details with a practical example. If you need to understand
 
 Hands on
 
-![](../assets/images/giphy-2.webp)
+![](https://natancode.com/wp-content/uploads/2024/12/giphy-2.webp)
 
 You’ll need some of the following dependencies in your `pom.xml`.
 
@@ -103,7 +103,7 @@ public interface FoodRepository extends JpaRepository<Food, Long> {
 }
 ```
 
-![](../assets/images/giphy.gif)
+![](https://natancode.com/wp-content/uploads/2025/05/giphy.gif)
 
 Next, we need a **service class**.
 

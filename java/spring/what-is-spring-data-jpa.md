@@ -98,7 +98,7 @@ public enum Unity {
 
 Now it's time to create the Repository interface.
 
-![](../assets/images/image-6.gif)
+![](https://natancode.com/wp-content/uploads/2023/11/image-6.gif)
 
 ```
 import com.natancode.nutri.domain.model.Food;
@@ -131,7 +131,7 @@ This annotation marks the interface as a Spring component from the repository la
 
 Now let's retrieve all items — the table is already populated.
 
-![](../assets/images/image.png)
+![](https://natancode.com/wp-content/uploads/2025/04/image.png)
 
 I'll create a Service to use the Repository.
 
@@ -184,7 +184,7 @@ public class FoodController {
 
 We get the following result.
 
-![](../assets/images/image-2.png)
+![](https://natancode.com/wp-content/uploads/2025/04/image-2.png)
 
 If you want to see the executed queries, you can add this property to the `application.properties` file.
 
@@ -192,7 +192,7 @@ If you want to see the executed queries, you can add this property to the `appli
 spring.jpa.show-sql=true
 ```
 
-![](../assets/images/giphy.webp)
+![](https://natancode.com/wp-content/uploads/2024/11/giphy.webp)
 
 Query Methods
 

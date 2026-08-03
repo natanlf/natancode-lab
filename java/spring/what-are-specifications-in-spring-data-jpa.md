@@ -7,17 +7,17 @@ tags: ["Java", "Spring"]
 ---
 **_Specifications_** allows the creation of **_dynamic queries programmatically_** using the provided filters in a flexible way.
 
-![](../assets/images/image.webp)
+![](https://natancode.com/wp-content/uploads/2024/10/image.webp)
 
 "JPA 2 introduces a criteria API that you can use to build _**queries programmatically**_. By writing a `criteria`, you define the where clause of a query for a domain class. Taking another step back, these criteria can be regarded as a predicate over the entity that is described by the JPA criteria API constraints."
 
-![](../assets/images/Specification-Interface-1024x537.png)
+![](https://natancode.com/wp-content/uploads/2024/10/Specification-Interface-1024x537.png)
 
 Specification Interface
 
 To be able to use Specification, it is necessary to make use of an interface called "**_JpaSpecificationExecutor_**".
 
-![](../assets/images/JpaSpecificationExecutor-1024x517.png)
+![](https://natancode.com/wp-content/uploads/2024/10/JpaSpecificationExecutor-1024x517.png)
 
 This way, we can perform the searches. For it to work, we need to use it in the Repository. I'll use an example.
 
@@ -209,16 +209,16 @@ In this example, we are using the method with paginated search, but as mentioned
 
 I have some records in the database; let's make a request without filtering.
 
-![](../assets/images/Specification-postman-request.png)
+![](https://natancode.com/wp-content/uploads/2024/10/Specification-postman-request.png)
 
 Now let's filter by doctor.
 
-![](../assets/images/Specification-postman-request-filter-1.png)
+![](https://natancode.com/wp-content/uploads/2024/10/Specification-postman-request-filter-1.png)
 
 Let's filter by status as well.
 
-![](../assets/images/Specification-postman-request-filter-2.png)
+![](https://natancode.com/wp-content/uploads/2024/10/Specification-postman-request-filter-2.png)
 
-![](../assets/images/image-1.webp)
+![](https://natancode.com/wp-content/uploads/2024/10/image-1.webp)
 
 This way, we can perform **advanced searches** **dynamically** by specifying only what we want to filter, as seen in the previous example, which provides **great flexibility** for the API.

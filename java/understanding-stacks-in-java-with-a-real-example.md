@@ -21,7 +21,7 @@ Here are the core operations every developer should know:
 *   **isEmpty()** → Checks if the stack is empty.
 *   **size()** → Returns the number of elements currently in the stack.
 
-![](../assets/images/image.webp)
+![](https://natancode.com/wp-content/uploads/2024/10/image.webp)
 
 ## 🧩 Real Example — Removing Adjacent Duplicates from a String
 

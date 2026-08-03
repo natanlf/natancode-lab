@@ -31,7 +31,7 @@ public void destroy() {
 }
 ```
 
-![](../assets/images/giphy.webp)
+![](https://natancode.com/wp-content/uploads/2024/12/giphy.webp)
 
 **Functioning in the Bean Lifecycle**
 

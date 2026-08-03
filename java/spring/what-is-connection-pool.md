@@ -11,13 +11,13 @@ Without Connection Pool
 
 A request was made to the application to fetch some information, and in this example, that information needs to be retrieved from the database. The web application receives the user's request, creates a new connection to the database, fetches the information from the database, and then closes the connection. This is an example without a Connection Pool.
 
-[![](../assets/images/Without-Connection-Pool-1.png "Without-Connection-Pool")](../assets/images/Without-Connection-Pool-1.png)
+[![](https://natancode.com/wp-content/uploads/2024/05/Without-Connection-Pool-1.png "Without-Connection-Pool")](https://natancode.com/wp-content/uploads/2024/05/Without-Connection-Pool-1.png)
 
 And what if the web application receives several requests simultaneously?
 
 This entire process will be repeated. For each request, a connection to the database is opened, the necessary operation on the database is performed, and then the connection is closed.
 
-[![](../assets/images/Many-requests-without-connection-pool-1.png "Without-Connection-Pool")](../assets/images/Many-requests-without-connection-pool-1.png)
+[![](https://natancode.com/wp-content/uploads/2024/05/Many-requests-without-connection-pool-1.png "Without-Connection-Pool")](https://natancode.com/wp-content/uploads/2024/05/Many-requests-without-connection-pool-1.png)
 
 Connection Pool
 
@@ -27,7 +27,7 @@ This way, we reduce the time spent on requests since there won't be opening and 
 
 When the application starts running, it creates connections that are available to be used.
 
-[![](../assets/images/Connection-Pool.png "Connection-Pool")](../assets/images/Connection-Pool.png)
+[![](https://natancode.com/wp-content/uploads/2024/05/Connection-Pool.png "Connection-Pool")](https://natancode.com/wp-content/uploads/2024/05/Connection-Pool.png)
 
 Connections that are not being used remain in an "_**Idle**_" state.
 
@@ -35,19 +35,19 @@ When the application receives a request, it can use a connection that is in an "
 
 In the following example, we start the application, the connections are created, and they are in an "**_Idle_**" state.
 
-[![](../assets/images/Connection-Pool-Idle.png "Connection-Pool-Idle")](../assets/images/Connection-Pool-Idle.png)
+[![](https://natancode.com/wp-content/uploads/2024/05/Connection-Pool-Idle.png "Connection-Pool-Idle")](https://natancode.com/wp-content/uploads/2024/05/Connection-Pool-Idle.png)
 
 In the next example, the application receives a request.
 
-[![](../assets/images/Connection-Pool-receives-1-request.png "Connection-Pool")](../assets/images/Connection-Pool-receives-1-request.png)
+[![](https://natancode.com/wp-content/uploads/2024/05/Connection-Pool-receives-1-request.png "Connection-Pool")](https://natancode.com/wp-content/uploads/2024/05/Connection-Pool-receives-1-request.png)
 
 In this way, a connection that was in an "**_Idle_**" state is used, so there is no need to open and close a new connection to the database. After completing the request, the connection returns to the "_**Idle**_" state, making it available for reuse in a new request.
 
-![](../assets/images/image-12.gif)
+![](https://natancode.com/wp-content/uploads/2023/11/image-12.gif)
 
 Now, let's see what happens if 5 requests are made to the web application.
 
-[![](../assets/images/Connection-Pool-Many-Requests-5-connections.png "Connection-Pool-Requests")](../assets/images/Connection-Pool-Many-Requests-5-connections.png)
+[![](https://natancode.com/wp-content/uploads/2024/05/Connection-Pool-Many-Requests-5-connections.png "Connection-Pool-Requests")](https://natancode.com/wp-content/uploads/2024/05/Connection-Pool-Many-Requests-5-connections.png)
 
 In the previous example, we saw that we have 3 connections. Now, if the application receives 5 simultaneous requests, we need to consider that 3 is the minimum number of connections, but we can also define a maximum number of connections. Let's define the following:
 
@@ -210,19 +210,19 @@ UNLOCK TABLES;
 
 Analyzing the Connection Pool
 
-[![](../assets/images/image-4.png "Default-Connection-Pool")](../assets/images/image-4.png)
+[![](https://natancode.com/wp-content/uploads/2024/05/image-4.png "Default-Connection-Pool")](https://natancode.com/wp-content/uploads/2024/05/image-4.png)
 
 After running the application, I checked the open connections in the database. Even without configuring a Connection Pool, we already have a Pool with several connections because **_Spring Data_** provides this by default through **_Hikari_**. We will discuss more about this later. Notice that all connections have a time of 10. I clicked refresh to update. But what does this mean?
 
 This "_**time**_" column represents how long ago this connection was used. I'll make one request and then click refresh right after.
 
-[![](../assets/images/image-5.png "Default-Connection-Pool")](../assets/images/image-5.png)
+[![](https://natancode.com/wp-content/uploads/2024/05/image-5.png "Default-Connection-Pool")](https://natancode.com/wp-content/uploads/2024/05/image-5.png)
 
 This means that an open connection was reused (changed state) and released (changed state) after completion, which is why the time became 1.
 
 At another time, I started the application to make some simultaneous requests, and we have the following result.
 
-[![](../assets/images/image-1.png "Default-Connection-Pool")](../assets/images/image-1.png)
+[![](https://natancode.com/wp-content/uploads/2024/05/image-1.png "Default-Connection-Pool")](https://natancode.com/wp-content/uploads/2024/05/image-1.png)
 
 * * *
 
@@ -247,22 +247,22 @@ The time is in milliseconds. After this period of idleness, we terminate these t
 
 After running the application, we can see that we have the 3 configured connections.
 
-[![](../assets/images/image.png "Custom-Connection-Pool")](../assets/images/image.png)
+[![](https://natancode.com/wp-content/uploads/2024/06/image.png "Custom-Connection-Pool")](https://natancode.com/wp-content/uploads/2024/06/image.png)
 
 After a request, we can see that the connection was reused and then became available again. After a few seconds of availability, I clicked the refresh button, and we can observe that the other connections remained in the same state as before.
 
-[![](../assets/images/image-1.png "Custom-Connection-Pool")](../assets/images/image-1.png)
+[![](https://natancode.com/wp-content/uploads/2024/06/image-1.png "Custom-Connection-Pool")](https://natancode.com/wp-content/uploads/2024/06/image-1.png)
 
 When making many requests simultaneously, two more connections were created, thus totaling the maximum of 5 that we configured.
 
-[![](../assets/images/image-2.png "Custom-Connection-Pool")](../assets/images/image-2.png)
+[![](https://natancode.com/wp-content/uploads/2024/06/image-2.png "Custom-Connection-Pool")](https://natancode.com/wp-content/uploads/2024/06/image-2.png)
 
 I interrupted the requests as indicated in the image below.
 
-[![Connection Poll](../assets/images/image-3.png "Custom-Connection-Pool")](../assets/images/image-3.png)
+[![Connection Poll](https://natancode.com/wp-content/uploads/2024/06/image-3.png "Custom-Connection-Pool")](https://natancode.com/wp-content/uploads/2024/06/image-3.png)
 
 After the timeout period, the two extra connections that were required are terminated because they were not needed, as explained earlier.
 
-[![Connection Poll](../assets/images/image-5.png "Custom-Connection-Pool")](../assets/images/image-5.png)
+[![Connection Poll](https://natancode.com/wp-content/uploads/2024/06/image-5.png "Custom-Connection-Pool")](https://natancode.com/wp-content/uploads/2024/06/image-5.png)
 
-![](../assets/images/image-1.gif)
+![](https://natancode.com/wp-content/uploads/2023/10/image-1.gif)

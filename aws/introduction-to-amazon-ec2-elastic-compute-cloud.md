@@ -8,7 +8,7 @@ categories: ["AWS", "Cloud"]
 
 With EC2, you can run anything from small web applications to high-performance systems, all with **pay-as-you-go pricing** and **elasticity** to scale according to your needs.
 
-![](../assets/images/giphy.gif)
+![](https://natancode.com/wp-content/uploads/2025/05/giphy.gif)
 
 ## 🧠 Types of EC2 Instances
 

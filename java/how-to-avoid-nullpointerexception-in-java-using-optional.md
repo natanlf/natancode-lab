@@ -9,7 +9,7 @@ tags: ["Java", "Quarkus", "Spring"]
 
 Hands on
 
-![](../assets/images/giphy.webp)
+![](https://natancode.com/wp-content/uploads/2024/12/giphy.webp)
 
 Creating an Optional
 
@@ -142,4 +142,4 @@ Conclusion
 
 When used correctly, Optional improves code maintainability by promoting more functional patterns with **map()**, **flatMap()**, **orElse()**, **orElseGet()**, and **ifPresent()**, making the value-handling flow more seamless and readable.
 
-![](../assets/images/giphy-1.webp)
+![](https://natancode.com/wp-content/uploads/2024/12/giphy-1.webp)

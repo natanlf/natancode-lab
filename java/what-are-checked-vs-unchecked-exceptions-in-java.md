@@ -12,7 +12,7 @@ At the top of the hierarchy is the `Throwable` class, which has two direct subcl
 *   `Error`: Serious problems that applications should not try to catch (e.g., `OutOfMemoryError`, `StackOverflowError`).
 *   `Exception`: Conditions that applications might want to catch.
 
-![](../assets/images/exceptions.png)
+![](https://natancode.com/wp-content/uploads/2025/06/exceptions.png)
 
 Checked Exceptions
 
@@ -63,4 +63,4 @@ Conclusion
 
 Understanding the exception hierarchy helps you make more informed decisions about how your code should respond to failures. When choosing between checked and unchecked exceptions, consider the type of error and whether it can (or should) be recovered from.
 
-![](../assets/images/giphy-1fc1c917-2905-4463-8ba3-a7fdaaaa6908.webp)
+![](https://natancode.com/wp-content/uploads/2024/12/giphy-1fc1c917-2905-4463-8ba3-a7fdaaaa6908.webp)

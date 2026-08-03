@@ -9,7 +9,7 @@ Exception handling in APIs is essential to ensure clear and efficient communicat
 
 Let's see an example in Spring.
 
-![](../assets/images/image.webp)
+![](https://natancode.com/wp-content/uploads/2024/10/image.webp)
 
 I have an API that uses Spring JPA, where I have a CRUD for Branch. Let's focus on a few classes.
 
@@ -164,25 +164,25 @@ public class BranchController {
 
 The BranchModel class has the properties id and name, and BranchModelAssembler handles conversions from the Entity (Branch class) to the model (BranchModel). So, when we make a request with an existing ID, we should receive a response with the branch; otherwise, we’ll get an HTTP 404 status. Up to this point, nothing is coded to throw this error, but as we saw in the service, we can throw the BranchNotFoundException when the ID is not found.
 
-![](../assets/images/image.png)
+![](https://natancode.com/wp-content/uploads/2024/11/image.png)
 
 * * *
 
-![](../assets/images/image-1.png)
+![](https://natancode.com/wp-content/uploads/2024/11/image-1.png)
 
 By default, the API throws a 500 error.
 
 When making a request with an existing ID, we get the expected result.
 
-![](../assets/images/image-2.png)
+![](https://natancode.com/wp-content/uploads/2024/11/image-2.png)
 
 Another scenario where we need to handle exceptions correctly is the following.
 
-![](../assets/images/image-5.png)
+![](https://natancode.com/wp-content/uploads/2024/11/image-5.png)
 
 Note that the exception thrown was as follows.
 
-![](../assets/images/image-6-1024x127.png)
+![](https://natancode.com/wp-content/uploads/2024/11/image-6-1024x127.png)
 
 We need to handle exceptions properly, so let's create a _**global ExceptionHandler**_ for this purpose. This will allow us to keep the code more organized as the API grows, making it possible to handle different types of exceptions effectively.
 
@@ -190,7 +190,7 @@ Let's create a class called `_**ApiExceptionHandler**_` that will use the `**_@C
 
 We'll extend the **_`ResponseEntityExceptionHandler`_** class, as it uses `**_@ExceptionHandler_**` and can handle various types of exceptions effectively.
 
-![](../assets/images/image-3.png)
+![](https://natancode.com/wp-content/uploads/2024/11/image-3.png)
 
 Additionally, we’ll create a DTO to have a custom error object. Feel free to design the DTO in whatever way you prefer.
 
@@ -322,12 +322,12 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
 
 Now, with the Global ExceptionHandler, every time an exception of type `_**EntityNotFoundException**_` is thrown, the **_`handleEntityNotFoundException`_** method is called and constructs the error in a customized way.
 
-![](../assets/images/image-7.png)
+![](https://natancode.com/wp-content/uploads/2024/11/image-7.png)
 
 The **_`handleEntityInUseException`_** method is called when we throw the `_**EntityInUseException**_`, following this logic, we can handle various types of exceptions. Meanwhile, the **_`handleExceptionInternal`_** method is generic; if there is no specific `ExceptionHandler` for a particular exception, it will handle it. This often applies to cases like a 415 error.
 
-![](../assets/images/image-8.png)
+![](https://natancode.com/wp-content/uploads/2024/11/image-8.png)
 
 * * *
 
-![](../assets/images/image-1.gif)
+![](https://natancode.com/wp-content/uploads/2023/10/image-1.gif)

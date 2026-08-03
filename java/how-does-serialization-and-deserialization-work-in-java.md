@@ -11,7 +11,7 @@ Serialization
 
 **It's the conversion of a Java object into a stream of bytes, which can, for example, be saved to a file.**
 
-![](../assets/images/Serialization.png)
+![](https://natancode.com/wp-content/uploads/2024/12/Serialization.png)
 
 Let's see an example; for that, we'll create a `User` class.
 
@@ -108,7 +108,7 @@ Deserialization
 
 **Deserialization does the opposite of Serialization.**
 
-![](../assets/images/Deserialization.png)
+![](https://natancode.com/wp-content/uploads/2024/12/Deserialization.png)
 
 ```
 import java.io.IOException;
@@ -223,7 +223,7 @@ Caused by: java.io.InvalidClassException: com.natancode.serialize.User; local cl
 
 What does this mean?
 
-![](../assets/images/image-1.gif)
+![](https://natancode.com/wp-content/uploads/2023/11/image-1.gif)
 
 This happens because when serializing to the file, the class had a certain structure, and now we modified that structure by adding a new property. When we don't specify the class version number, it is automatically generated based on the class structure.
 

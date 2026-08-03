@@ -12,7 +12,7 @@ This post is a continuation of the previous one; if you have any questions, feel
 
 Let's practice
 
-![](../assets/images/giphy.webp)
+![](https://natancode.com/wp-content/uploads/2024/12/giphy.webp)
 
 ```
 version: "3.9"
@@ -95,15 +95,15 @@ docker compose up
 
 It may happen that the API runs before MySQL is available, even when specifying `depends_on`.
 
-![](../assets/images/image-18-1024x561.png)
+![](https://natancode.com/wp-content/uploads/2024/11/image-18-1024x561.png)
 
-![](../assets/images/giphy-b4fab9c5-3e1c-4fe3-833b-8025108420a9.webp)
+![](https://natancode.com/wp-content/uploads/2024/12/giphy-b4fab9c5-3e1c-4fe3-833b-8025108420a9.webp)
 
 Don't worry, we can force the API to run only when MySQL is available.
 
 We can use `wait-for-it.sh`, a bash script that waits until a host is available before running a command. Download the `wait-for-it.sh` file and place it in the root folder of the project. We can specify the host and port we are waiting for, in this case, MySQL, and the command that needs to be executed after the host (MySQL) is running on the specified port.
 
-![](../assets/images/image-19.png)
+![](https://natancode.com/wp-content/uploads/2024/11/image-19.png)
 
 We make the `wait-for-it.sh` file available inside the image by specifying it in the Dockerfile.
 
@@ -180,7 +180,7 @@ services:
 
 Before running docker-compose, we need to create the API image and ensure that the wait-for-it.sh file has the correct Line Separator if you're using Windows. In IntelliJ, you can check it here.
 
-![](../assets/images/image-22.png)
+![](https://natancode.com/wp-content/uploads/2024/11/image-22.png)
 
 Set it to LF, save the file, and build the API image. Now we can run the docker compose command.
 
@@ -188,14 +188,14 @@ Set it to LF, save the file, and build the API image. Now we can run the docker 
 docker-compose up
 ```
 
-![](../assets/images/image-20-1024x450.png)
+![](https://natancode.com/wp-content/uploads/2024/11/image-20-1024x450.png)
 
-![](../assets/images/image-21-1024x476.png)
+![](https://natancode.com/wp-content/uploads/2024/11/image-21-1024x476.png)
 
-![](../assets/images/image-24.png)
+![](https://natancode.com/wp-content/uploads/2024/11/image-24.png)
 
 When calling the endpoint, I get the result.
 
-![](../assets/images/image-23.png)
+![](https://natancode.com/wp-content/uploads/2024/11/image-23.png)
 
-![](../assets/images/image.gif)
+![](https://natancode.com/wp-content/uploads/2023/11/image.gif)

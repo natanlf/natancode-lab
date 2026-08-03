@@ -88,7 +88,7 @@ An interesting point is that when creating a Bean, it’s not always necessary t
 
 How is it possible?
 
-![](../assets/images/image-9.gif)
+![](https://natancode.com/wp-content/uploads/2023/11/image-9.gif)
 
 **_@Configuration_** makes use of _**@Component**_.
 
@@ -240,7 +240,7 @@ public @interface SpringBootApplication {
 }
 ```
 
-![](../assets/images/image-1.webp)
+![](https://natancode.com/wp-content/uploads/2024/10/image-1.webp)
 
 Regarding dependency injection, **_@Autowired_** was used, but we can also perform _**dependency injection**_ through the constructor. In this case, we don't need to specify any annotations; it just needs to be a Bean managed by Spring.
 

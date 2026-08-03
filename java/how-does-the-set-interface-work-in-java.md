@@ -5,7 +5,7 @@ date: 2024-02-09T22:45:54
 categories: ["Java"]
 tags: ["Java"]
 ---
-![](../assets/images/diagrama-de-classes-set.png)
+![](https://natancode.com/wp-content/uploads/2024/02/diagrama-de-classes-set.png)
 
 The `Set` interface inherits from the `Collection` interface. There are several implementations of the `Set` interface, such as `HashSet`, `LinkedHashSet`, and `TreeSet`, each with its own characteristics. Unlike the `List` interface, we cannot access an element by index in a `Set`, but it is possible to iterate over the elements. We will see some usage examples, although we won't cover all possibilities. I'll provide a list of methods and a link to the documentation for more details.
 
@@ -171,7 +171,7 @@ In the main class, we add elements to the Set.
 
 When running the code, we get the following result:
 
-![](../assets/images/image.png)
+![](https://natancode.com/wp-content/uploads/2024/02/image.png)
 
 Note that the insertion order of elements was not preserved.
 
@@ -190,7 +190,7 @@ Set<CountryPopulation> countriesPopulation = new HashSet<>();
 
 I attempted to add Brazil again.
 
-![](../assets/images/image-1.png)
+![](https://natancode.com/wp-content/uploads/2024/02/image-1.png)
 
 After executing the code, we can see that Brazil was not added again because it does not allow duplicate elements.
 
@@ -209,7 +209,7 @@ Set<CountryPopulation> countriesPopulation = new HashSet<>();
 
 In the first attempt to add Brazil, I added a print statement to show this attempt, and I did the same for the second attempt as well.
 
-![](../assets/images/image-2.png)
+![](https://natancode.com/wp-content/uploads/2024/02/image-2.png)
 
 The add method returns a boolean value. When it is true, it means that the value was successfully added to the Set, and false means it was not.
 
@@ -229,7 +229,7 @@ Set<CountryPopulation> countriesPopulation = new HashSet<>();
 
 We tried to add a null value, and here's the result:
 
-![](../assets/images/image-3.png)
+![](https://natancode.com/wp-content/uploads/2024/02/image-3.png)
 
 As mentioned earlier, it's also possible to add a null value.
 
@@ -257,7 +257,7 @@ countriesPopulation.add(new CountryPopulation("Brazil2", 216_422_446L));
 
 When trying to add the following element, we get the following result.
 
-![](../assets/images/image-4.png)
+![](https://natancode.com/wp-content/uploads/2024/02/image-4.png)
 
 It was added to the Set because the equals method checks the name. The quantity can be repeated, but if I try to add an element with the same name, we won't be able to, even if the quantity is different. In this case, the quantity is irrelevant because we only check the name.
 
@@ -274,7 +274,7 @@ Set<CountryPopulation> countriesPopulation = new HashSet<>();
         countriesPopulation.forEach(System.out::println);
 ```
 
-![](../assets/images/image-5.png)
+![](https://natancode.com/wp-content/uploads/2024/02/image-5.png)
 
 TreeSet
 
@@ -373,7 +373,7 @@ public class CountryPopulation implements Comparable<CountryPopulation> {
 
 After running the code following the implementation of Comparable, we have the following result.
 
-![](../assets/images/image-6.png)
+![](https://natancode.com/wp-content/uploads/2024/02/image-6.png)
 
 The natural order of names has been maintained because that's what we check in the `compareTo` method, and this check is performed when adding elements.
 
@@ -390,7 +390,7 @@ Set<CountryPopulation> countriesPopulation = new TreeSet<>();
         countriesPopulation.add(new CountryPopulation("Brazil", 216_422_446L));
 ```
 
-![](../assets/images/image-7.png)
+![](https://natancode.com/wp-content/uploads/2024/02/image-7.png)
 
 It's not possible to add "Brazil" again because it already exists in the Set.
 
@@ -441,7 +441,7 @@ Set<CountryPopulation> countriesPopulation = new TreeSet<>(new CountryPopulation
         countriesPopulation.add(new CountryPopulation("Uruguay", 3_423_108L));
 ```
 
-![](../assets/images/image-8.png)
+![](https://natancode.com/wp-content/uploads/2024/02/image-8.png)
 
 LinkedHashSet
 
@@ -461,7 +461,7 @@ Set<CountryPopulation> countriesPopulation = new LinkedHashSet<>();
         countriesPopulation.add(new CountryPopulation("Uruguay", 3_423_108L));
 ```
 
-![](../assets/images/image-9.png)
+![](https://natancode.com/wp-content/uploads/2024/02/image-9.png)
 
 Maintains the insertion order of elements.
 
@@ -477,7 +477,7 @@ Set<CountryPopulation> countriesPopulation = new LinkedHashSet<>();
         countriesPopulation.add(null);
 ```
 
-![](../assets/images/image-10.png)
+![](https://natancode.com/wp-content/uploads/2024/02/image-10.png)
 
 Duplicates are not allowed, but adding a null element is permitted.
 

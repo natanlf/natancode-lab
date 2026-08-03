@@ -11,7 +11,7 @@ SSR
 
 Now, when creating a project, there's a straightforward option to enable SSR.
 
-![](../assets/images/image-6.png)
+![](https://natancode.com/wp-content/uploads/2023/11/image-6.png)
 
 To create a new project with SSR, run:
 
@@ -27,17 +27,17 @@ ng add @angular/ssr
 
 Let's compare the old version with the new one.
 
-![](../assets/images/image-7.png)
+![](https://natancode.com/wp-content/uploads/2023/11/image-7.png)
 
 In previous versions, installing **Angular Universal** was required, but not anymore. Just follow the steps listed above. To run it, simply use **_'ng serve'._** I created a project and executed the command.
 
-![](../assets/images/image-10.gif)
+![](https://natancode.com/wp-content/uploads/2023/11/image-10.gif)
 
-![](../assets/images/image-8.png)
+![](https://natancode.com/wp-content/uploads/2023/11/image-8.png)
 
 In "View Page Source" I can see the content.
 
-![](../assets/images/image-11.png)
+![](https://natancode.com/wp-content/uploads/2023/11/image-11.png)
 
 There are resources like **window** and **document** that can only be executed in the browser, not on the server. The introduction of lifecycle hooks, specifically **afterRender** and **afterNextRender**, aids in this distinction—they are exclusively executed in the browser and skipped on the server. To test this functionality, I employ a template reference.
 
@@ -75,9 +75,9 @@ export class AppComponent {
 
 The following result emerges:
 
-![](../assets/images/image-12.png)
+![](https://natancode.com/wp-content/uploads/2023/11/image-12.png)
 
-![](../assets/images/image-11.gif)
+![](https://natancode.com/wp-content/uploads/2023/11/image-11.gif)
 
 **afterRender**: Register a callback to be invoked each time the application finishes rendering.
 

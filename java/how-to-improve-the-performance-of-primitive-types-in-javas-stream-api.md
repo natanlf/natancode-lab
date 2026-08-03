@@ -58,7 +58,7 @@ That's why there's a special type to use for primitive values of type **_"int"_*
 
 * * *
 
-![](../assets/images/image-7.png)
+![](https://natancode.com/wp-content/uploads/2024/06/image-7.png)
 
 * * *
 
@@ -89,7 +89,7 @@ Then I tried to sum using the **_"map"_**.
 
 I had the following result.
 
-![](../assets/images/image-8.png)
+![](https://natancode.com/wp-content/uploads/2024/06/image-8.png)
 
 * * *
 
@@ -110,17 +110,17 @@ Then I tried to add using _**"mapToInt"**_.
 
 * * *
 
-![](../assets/images/image-9.png)
+![](https://natancode.com/wp-content/uploads/2024/06/image-9.png)
 
 * * *
 
-![](../assets/images/image.gif)
+![](https://natancode.com/wp-content/uploads/2023/11/image.gif)
 
 I was able to notice a difference in execution time using the same list of products, the same computer for both, and the same operating system.
 
 It's interesting to note that there are also other methods available for other **_primitive types_**, such as _**"mapToLong"**_ and _**"mapToDouble"**_.
 
-![](../assets/images/image-10.png)
+![](https://natancode.com/wp-content/uploads/2024/06/image-10.png)
 
 * * *
 
