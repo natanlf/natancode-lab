@@ -7,13 +7,12 @@ tags: ["Java", "Quarkus", "Unit Test"]
 ---
 Parameterized unit tests are beneficial for applications as they simplify the process of writing tests, allowing us to **run a single test multiple times with different parameters.**
 
-![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTl3NXJsaThya3MybWFtcTB4dG1ieTdtc3ZhbmRnZHZsZWRqZ2Z5YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oKIPlLZEbEbacWqOc/giphy.gif)
 
 Requirements
 
 I’m using JDK 17, Intellij and Quarkus Version 3.4 on the project.
 
-![](https://natancode.com/wp-content/uploads/2023/10/image.png)
+![](../images/testes-parametrizados.webp)
 
 JDK17
 
@@ -65,7 +64,6 @@ We have multiple validations to perform on the '**id**' field. I aim to validate
 
 To streamline this process, we don't need to create four separate tests; we can utilize parameterized tests.
 
-![](https://media.giphy.com/media/a5viI92PAF89q/giphy.gif)
 
 We require the **Hibernate Validator** library to conduct the validation, and I've developed a generic method for this purpose.
 
@@ -138,7 +136,7 @@ It's worth noting that `@ValueSource` can also accommodate other field types suc
 
 The test method accepts these parameters and runs the test for each of them.
 
-![ParameterizedTest ](https://natancode.com/wp-content/uploads/2023/11/image-2.png)
+![](../images/testes-parametrizados-2.webp)
 
 Conclusion
 

@@ -58,8 +58,7 @@ That's why there's a special type to use for primitive values of type **_"int"_*
 
 * * *
 
-![](https://natancode.com/wp-content/uploads/2024/06/image-7.png)
-
+![](./images/stream-api-3.webp)
 * * *
 
 I created an empty list of products and added many products to it.
@@ -89,7 +88,8 @@ Then I tried to sum using the **_"map"_**.
 
 I had the following result.
 
-![](https://natancode.com/wp-content/uploads/2024/06/image-8.png)
+
+![](./images/stream-api-result-1.webp)
 
 * * *
 
@@ -110,18 +110,13 @@ Then I tried to add using _**"mapToInt"**_.
 
 * * *
 
-![](https://natancode.com/wp-content/uploads/2024/06/image-9.png)
+![](./images/stream-api-result.webp)
 
 * * *
-
-![](https://natancode.com/wp-content/uploads/2023/11/image.gif)
 
 I was able to notice a difference in execution time using the same list of products, the same computer for both, and the same operating system.
 
 It's interesting to note that there are also other methods available for other **_primitive types_**, such as _**"mapToLong"**_ and _**"mapToDouble"**_.
 
-![](https://natancode.com/wp-content/uploads/2024/06/image-10.png)
 
-* * *
-
-![](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWRhZTVhM2dkc3dxZHg4eW8ycGZ1N3c1aWJzbDV2NzE1dXgzaTU0NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xUPOqo6E1XvWXwlCyQ/giphy.webp)
+![](./images/stream-api.webp)

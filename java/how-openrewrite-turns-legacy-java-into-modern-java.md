@@ -160,7 +160,6 @@ public class Main {
 }
 ```
 
-![](https://natancode.com/wp-content/uploads/2024/10/image-1.webp)
 
 Conclusion
 
@@ -173,7 +172,3 @@ the behavior does not change, but the quality of the code improves dramatically.
 
 If you maintain large, long-lived, or legacy Java systems, OpenRewrite enables something that used to be almost impossible:  
 👉 **modernizing your code at scale, with safety and confidence.**
-
-More information:
-
-![](https://natancode.com/wp-content/uploads/2024/11/giphy.webp)

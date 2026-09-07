@@ -7,7 +7,7 @@ tags: ["Java", "JUnit", "Quarkus", "Unit Test"]
 ---
 Testing a system is very important to maintain quality. There are some types of tests.
 
-![](https://natancode.com/wp-content/uploads/2023/10/Testing_Pyramid-4.webp)
+![](../images/Testing_Pyramid.webp)
 
 Closer to the base of the pyramid, less cost and time are required.  
 Let's focus on the base of the pyramid.
@@ -16,7 +16,7 @@ Unit test serves to validate the smallest code units. Generally a system accesse
 
 Unit test doesn't care about integration, it is **independent**.
 
-![](https://natancode.com/wp-content/uploads/2023/10/image.gif)
+
 
 Got confused ? Don't worry, below I'll show you in practice how to do it. The purpose is to have an understanding of how it works. We have a success / failure scenario and I will show you how to mock it.
 
@@ -24,7 +24,7 @@ Requirements
 
 I'm using JDK 17, Intellij and Quarkus Version 3.4 on the project.
 
-![](https://natancode.com/wp-content/uploads/2023/10/image.png)
+![](../images/unit-test-quarkus.webp)
 
 I used these dependencies:
 
@@ -219,7 +219,6 @@ The sum method does not call an external service, so there was no need for a moc
 
 Testing with mock
 
-![](https://natancode.com/wp-content/uploads/2023/10/image-2.gif)
 
 As I said before, unit tests are independent, they do not test integration with external services.  
 Let's test the decrease method, as it makes a call to an external service.
@@ -308,7 +307,7 @@ ExtensionsService extensionsService;
     }
 ```
 
-![](https://natancode.com/wp-content/uploads/2023/10/image-2.png)
+![](../images/unit-test-quarkus-final.webp)
 
 Conclusion
 
@@ -317,4 +316,3 @@ When we test a specific part of the code, we are able to validate all of its log
 
 The code is available here: [https://github.com/natanlf/quarkus-unit-tests.git](https://github.com/natanlf/quarkus-unit-tests.git)
 
-![](https://natancode.com/wp-content/uploads/2023/10/image-1.gif)

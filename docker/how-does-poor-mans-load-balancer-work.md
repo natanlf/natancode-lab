@@ -24,8 +24,6 @@ Understanding the concept of Poor Man’s Load Balancer is an interesting and ed
 
 How does it work in practice?
 
-![](https://natancode.com/wp-content/uploads/2024/12/giphy-2.webp)
-
 We will have multiple containers, and the load balancer will know which one to send the request to. We will use Docker; if you have any questions, I have other posts explaining Dockerfiles and Docker Compose.
 
 In the Docker Compose file, we don’t map the API ports because the load balancer will handle this. This is not a production-ready solution; it’s just for understanding how it works. We’ll use the Poor Man's Load Balancer (DNS Round Robin).
@@ -81,7 +79,7 @@ The default configuration file is removed, and the created file is copied.
 
 The files were created inside the root folder of the API, as shown in the image.
 
-![](https://natancode.com/wp-content/uploads/2024/11/image-25.png)
+![](../docker/images/docker3.webp)
 
 The reverse proxy block is as follows.
 
@@ -156,16 +154,14 @@ To run by scaling the API container with 2 instances:
 docker-compose up --scale company-api=2
 ```
 
-![](https://natancode.com/wp-content/uploads/2024/11/image-26-1024x178.png)
+![](../docker/images/docker-scale1.webp)
 
 The two containers start, and when making requests to the API using port 80, we get the following results.
 
-![](https://natancode.com/wp-content/uploads/2024/11/image-27-1024x202.png)
+![](../docker/images/docker-scale2.webp)
 
-![](https://natancode.com/wp-content/uploads/2024/11/image-28-1024x368.png)
+![](../docker/images/docker-postman.webp)
 
-![](https://natancode.com/wp-content/uploads/2024/11/image-29-1024x433.png)
+![](../docker/images/docker-postman2.webp)
 
 The hostcheck endpoint shows which container responded to the request.
-
-![](https://natancode.com/wp-content/uploads/2024/12/giphy-1fc1c917-2905-4463-8ba3-a7fdaaaa6908.webp)

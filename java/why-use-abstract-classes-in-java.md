@@ -55,11 +55,9 @@ We have 3 classes: the `Animal` class, which is abstract and cannot be instantia
 
 **Why create a class that cannot be instantiated?**
 
-![](https://natancode.com/wp-content/uploads/2025/02/giphy.webp)
 
 This depends on the business context. In this specific case, it’s important to know which animal needs attention; we can’t use something generic. We need to know if it’s a cat or a dog because this impacts the veterinary treatment. Therefore, in this case, it’s necessary to specify if it’s a cat or dog. So, we can’t instantiate an animal directly, but we can instantiate a dog or a cat, which are also animals but more specific.
 
-![](https://natancode.com/wp-content/uploads/2024/10/image-1.webp)
 
 Benefits:
 

@@ -7,7 +7,7 @@ tags: ["Java", "Quarkus"]
 ---
 Imagine the following scenario where there are multiple implementations for the same interface, and when using dependency injection, the software needs to understand which implementation to use. Let's illustrate with an example to understand what the problem is and how to solve it.
 
-![](https://natancode.com/wp-content/uploads/2024/04/image.png)
+![](../images/dependency-injection.webp)
 
 Website Diagram: [https://refactoring.guru/](https://refactoring.guru/)
 
@@ -207,7 +207,7 @@ We use Dependency Injection in the `OrderService` with the `@Inject` annotation.
 
 When running `clean install`, we get the following result.
 
-[![](https://natancode.com/wp-content/uploads/2024/05/Qualifier-300x47.jpg)](https://natancode.com/wp-content/uploads/2024/05/Qualifier.jpg)
+![](../images/Qualifier.webp)
 
 Click to Zoom
 
@@ -257,7 +257,7 @@ Transport transport;
 
 This way, we specify which implementation we want to use and solve the problem.
 
-![](https://natancode.com/wp-content/uploads/2024/05/image.png)
+![](../images/Qualifier-2.webp)
 
 Solving with Custom Annotation
 
@@ -351,7 +351,6 @@ For example, if you want to make the delivery by ship, simply specify it as foll
 
 Now each implementation has its own qualifier, and the OrderService knows which implementation to use.
 
-![](https://natancode.com/wp-content/uploads/2023/11/image-10.gif)
 
 * * *
 
@@ -389,7 +388,3 @@ public class OrderService {
     }
 }
 ```
-
-* * *
-
-![](https://natancode.com/wp-content/uploads/2023/11/image-12.gif)

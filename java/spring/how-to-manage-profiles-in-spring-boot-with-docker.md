@@ -102,8 +102,6 @@ services:
 
 Now we need to build a Docker image for the application. How do we do that?
 
-![](https://natancode.com/wp-content/uploads/2023/11/image-1.gif)
-
 First, package your application into a `.jar`:
 
 ```

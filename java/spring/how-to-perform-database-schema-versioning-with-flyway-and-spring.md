@@ -137,15 +137,11 @@ public class Employee {
 
 Let's observe what happens when the project starts.
 
-![](https://natancode.com/wp-content/uploads/2024/09/Starting-the-Spring-Project-1024x359.png)
+![](../images/database-schema.webp)
 
-* * *
 
 There are no migrations, and a table called "flyway\_schema\_history" was created in our database. What does it do?
 
-![](https://natancode.com/wp-content/uploads/2023/11/image-1.gif)
-
-* * *
 
 Its purpose is to store the version history. When a migration is executed, it is stored in this table. This is how Flyway keeps track of the history to manage it.
 
@@ -155,7 +151,8 @@ Inside the `resources` folder, we need to create two more folders: `db/migration
 
 Inside the `migration` folder, we can create the migration file. We need to follow this structure: "V001\_\_create\_initial\_tables.sql".
 
-![](https://natancode.com/wp-content/uploads/2024/09/resources.png)
+
+![](../images/migration1.webp)
 
 * * *
 
@@ -188,17 +185,17 @@ CREATE TABLE `employee` (
 
 When running the application, we get the following result:
 
-![](https://natancode.com/wp-content/uploads/2024/09/first-migration-1024x275.png)
+![](../images/first-migration.webp)
 
 * * *
 
 The migration was executed, and we can see in the _**"flyway\_schema\_history"**_ table the history of migrations.
 
-![](https://natancode.com/wp-content/uploads/2024/09/flyway_schema_history.png)
+
+![](../images/flyway_schema_history.webp)
 
 * * *
 
-![](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWN6YnZuNWM0eW9jc2dldnVtZzhqYWRmbHR5cDN5cWNyeDZ2bmV2bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ph05xuYgrX5te/giphy.webp)
 
 * * *
 
@@ -214,12 +211,9 @@ alter table `employee` add cellphone varchar(15);
 
 Upon execution, we get the following result:
 
-![](https://natancode.com/wp-content/uploads/2024/09/second-migration-1024x420.png)
+
+![](../images/second-migration.webp)
 
 * * *
 
-![](https://natancode.com/wp-content/uploads/2024/09/flyway_schema_history-2.png)
-
-* * *
-
-![](https://natancode.com/wp-content/uploads/2023/11/image-11.gif)
+![](../images/flyway_schema_history-2.webp)

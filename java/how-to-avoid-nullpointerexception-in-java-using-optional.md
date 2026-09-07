@@ -9,8 +9,6 @@ tags: ["Java", "Quarkus", "Spring"]
 
 Hands on
 
-![](https://natancode.com/wp-content/uploads/2024/12/giphy.webp)
-
 Creating an Optional
 
 **Optional** can be created in several ways:
@@ -141,5 +139,3 @@ Conclusion
 **Optional** allows representing the absence of a value explicitly, encouraging better handling of null returns without the need for excessive **if** checks to avoid null.
 
 When used correctly, Optional improves code maintainability by promoting more functional patterns with **map()**, **flatMap()**, **orElse()**, **orElseGet()**, and **ifPresent()**, making the value-handling flow more seamless and readable.
-
-![](https://natancode.com/wp-content/uploads/2024/12/giphy-1.webp)

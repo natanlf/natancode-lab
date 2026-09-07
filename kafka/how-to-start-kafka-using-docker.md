@@ -12,21 +12,19 @@ Go to **Docker Hub** and in the search bar, look for **“apache kafka”**. Thi
 
 Hands on
 
-![](https://natancode.com/wp-content/uploads/2025/04/giphy.gif)
-
-![](https://natancode.com/wp-content/uploads/2025/05/image-1024x527.png)
+![](../docker/images/docker1.webp)
 
 After clicking on the **Apache Kafka** image, download it by clicking **Pull**, then go to the **Run** option.
 
-![](https://natancode.com/wp-content/uploads/2025/05/image-1-1024x527.png)
+![](../docker/images/docker2.webp)
 
 Set the **container name** and **port**, then click **Run**.
 
-![](https://natancode.com/wp-content/uploads/2025/05/image-2.png)
+![](../docker/images/kafka.webp)
 
 The log should indicate that everything is running properly.
 
-![](https://natancode.com/wp-content/uploads/2025/05/image-3-1024x541.png)
+![](../docker/images/kafka2.webp)
 
 Now, in the **Exec** tab, we can run commands inside the `/opt/kafka` directory.
 
@@ -50,7 +48,7 @@ bin/kafka-topics.sh --list --bootstrap-server localhost:9092
 
 Use the following command to **list topics**.
 
-![](https://natancode.com/wp-content/uploads/2025/05/image-4-1024x541.png)
+![](../docker/images/kafka3.webp)
 
 Conclusion
 

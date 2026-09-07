@@ -143,8 +143,6 @@ More about Functions
 
 When using them, we have the options to use **compose** and **andThen**, but what do they mean?
 
-![](https://natancode.com/wp-content/uploads/2023/11/image-9.gif)
-
 **`compose`** → First executes the function passed as an argument, then the main function.
 
 ```

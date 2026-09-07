@@ -14,8 +14,6 @@ We need to keep in mind which type of copy will meet our needs because, in the c
 
 Hands on
 
-![](https://natancode.com/wp-content/uploads/2024/12/giphy-2.webp)
-
 Shallow Copy
 
 ```

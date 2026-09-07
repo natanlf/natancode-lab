@@ -76,11 +76,11 @@ clean package
 
 Result of the image creation when running the command.
 
-![](https://natancode.com/wp-content/uploads/2024/11/image-10-1024x489.png)
+![](../docker/images/docker4.webp)
 
 * * *
 
-![](https://natancode.com/wp-content/uploads/2024/11/image-11.png)
+![](../docker/images/docker5.webp)
 
 To run a container from the created image, simply execute the following docker command:
 
@@ -92,9 +92,8 @@ It will run a container from the company image on port **_8080_**.
 
 The `_**-rm**_` indicates that after stopping the container, it will be automatically removed.
 
-![](https://natancode.com/wp-content/uploads/2024/11/image-12-1024x286.png)
+![](../docker/images/docker6.webp)
 
-![](https://natancode.com/wp-content/uploads/2023/11/image-11.gif)
 
 You will likely encounter a scenario where you need to communicate with another container, such as a database container. The application container needs to connect to the database container. Let's try this scenario using everything we've covered so far.
 
@@ -112,11 +111,9 @@ docker container run --rm -p 8080:8080 company
 
 We have the following error:
 
-![](https://natancode.com/wp-content/uploads/2024/11/image-13-1024x213.png)
+![](../docker/images/docker7.webp)
 
 We couldn't connect to the database, but why?
-
-![](https://natancode.com/wp-content/uploads/2023/11/image-7.gif)
 
 This happens because the application container and the database container are on different networks. We need to place both on the same network in order to connect successfully. To resolve this, we first need to create a network.
 
@@ -157,8 +154,6 @@ Now, when running the container, we will specify the network and the MySQL datab
 docker container run --rm -p 8080:8080 -e DATABASE_HOST=company-mysql --network company-network company
 ```
 
-![](https://natancode.com/wp-content/uploads/2024/11/image-14-1024x471.png)
+![](../docker/images/docker8.webp)
 
 Now the containers can communicate with each other and we no longer have problems connecting the API to the database, as both are on the same network.
-
-![](https://natancode.com/wp-content/uploads/2024/11/giphy.webp)

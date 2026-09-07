@@ -7,7 +7,7 @@ tags: ["Java"]
 ---
 To understand, I believe the best way is through an example. Let's take a look at a simple delivery system. It's not a complete system; it's something didactic and simple to illustrate.
 
-![https://refactoring.guru/images/patterns/diagrams/factory-method/solution2-en.png](https://natancode.com/wp-content/uploads/2024/04/image.png)
+![](images/dependency-injection.webp)
 
 Website Diagram: [https://refactoring.guru/](https://refactoring.guru/)
 
@@ -207,7 +207,7 @@ public class Main {
 
 Let's run the code and see the result.
 
-![](https://natancode.com/wp-content/uploads/2024/04/image-1.png)
+![](images/dependency-injection-2.webp)
 
 We can change it to "ship" in the main class.
 
@@ -217,8 +217,6 @@ Transport transport = new Ship();
 
 * * *
 
-![](https://natancode.com/wp-content/uploads/2024/04/image-2.png)
-
-![](https://natancode.com/wp-content/uploads/2023/11/image-6.gif)
+![](images/dependency-injection-3.webp)
 
 We learned about inversion of control and dependency injection, and the benefits of flexibility, as we reduced coupling and were able to use polymorphism. It's a very important concept that many frameworks like Spring, Quarkus, and others utilize.

@@ -20,8 +20,6 @@ Messages are stored in the queue until they are read. This ensures reliability a
 
 Hands on
 
-![](https://natancode.com/wp-content/uploads/2025/05/giphy.gif)
-
 Kafka needs to be running, and in a previous post I explained how to do that using Docker. If you’re unsure, I recommend checking out the following post:
 
 https://natancode.com/2025/05/22/how-to-start-kafka-using-docker/

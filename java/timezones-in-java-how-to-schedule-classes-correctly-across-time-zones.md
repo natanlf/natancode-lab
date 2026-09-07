@@ -7,7 +7,6 @@ tags: ["Java"]
 ---
 Imagine you're developing a platform like Cambly, where students and teachers are spread across the globe. A student in Brazil wants to schedule a class at 10:00 AM local time with a teacher living in Australia. How can you ensure that both are connected at the right time, even though they're in different time zones?
 
-![](https://natancode.com/wp-content/uploads/2023/11/image-1.gif)
 
 The answer lies in the correct use of `Instant`, `ZonedDateTime`, and `ZoneId` in Java. Let's understand how this works!
 
@@ -23,7 +22,7 @@ To synchronize human activities, countries adopt different time zones — for co
 
 For example, Brazil uses **UTC-3**, meaning it is 3 hours behind UTC. So, if it's 00:00 AM UTC, it will be **9:00 PM** in Brazil.
 
-![](https://natancode.com/wp-content/uploads/2025/06/World_Time_Zones_Map.png)
+![](../java/images/World_Time_Zones_Map.webp)
 
 ### 🧠 Core Concept
 

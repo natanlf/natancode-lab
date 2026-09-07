@@ -87,5 +87,3 @@ public class StateController {
 *   **@DeleteMapping("/{stateId}")**: It is used to delete a resource, utilized in the deleteById method when making a request with the _**HTTP DELETE**_ request to the URL _**"/v1/states/{stateId}"**_;
 
 *   **@ResponseStatus(HttpStatus.NO\_CONTENT)**: It defines that the HTTP return code will be _**204 (No Content)**_ when a resource is successfully deleted.
-
-![](https://natancode.com/wp-content/uploads/2023/11/image-6.gif)

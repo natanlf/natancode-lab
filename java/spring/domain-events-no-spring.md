@@ -11,8 +11,6 @@ Within the Spring ecosystem, event support is simple yet highly effective for **
 
 What are Domain Events?
 
-![](https://natancode.com/wp-content/uploads/2023/10/image.gif)
-
 A _Domain Event_ represents a significant occurrence in the domain model, such as:
 
 *   An order was placed

@@ -7,7 +7,6 @@ tags: ["Docker"]
 ---
 Docker has revolutionized the way developers package, distribute, and run applications. With it, you can create portable and standardized environments with incredible ease. To make the most of this powerful tool, it's essential to master some basic commands that are part of daily work with containers, images, and networks. In this post, we’ll explore the key Docker commands, explaining what they do and giving practical examples so you can immediately apply them to your workflow.
 
-![](https://natancode.com/wp-content/uploads/2025/04/giphy.gif)
 
 🔍 Searching on DockerHub
 

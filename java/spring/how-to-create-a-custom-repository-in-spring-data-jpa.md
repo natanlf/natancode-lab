@@ -38,8 +38,6 @@ public interface FoodRepository extends JpaRepository<Food, Long> {
 
 Now that we have the main repository defined, we can create the customized one.
 
-![](https://natancode.com/wp-content/uploads/2025/04/giphy.gif)
-
 ```
 import com.natancode.nutri.domain.model.Food;
 import com.natancode.nutri.domain.model.Origin;

@@ -12,8 +12,6 @@ This post is a continuation of the previous one; if you have any questions, feel
 
 Let's practice
 
-![](https://natancode.com/wp-content/uploads/2024/12/giphy.webp)
-
 ```
 version: "3.9"
 
@@ -95,15 +93,14 @@ docker compose up
 
 It may happen that the API runs before MySQL is available, even when specifying `depends_on`.
 
-![](https://natancode.com/wp-content/uploads/2024/11/image-18-1024x561.png)
+![](../docker/images/docker13.webp)
 
-![](https://natancode.com/wp-content/uploads/2024/12/giphy-b4fab9c5-3e1c-4fe3-833b-8025108420a9.webp)
 
 Don't worry, we can force the API to run only when MySQL is available.
 
 We can use `wait-for-it.sh`, a bash script that waits until a host is available before running a command. Download the `wait-for-it.sh` file and place it in the root folder of the project. We can specify the host and port we are waiting for, in this case, MySQL, and the command that needs to be executed after the host (MySQL) is running on the specified port.
 
-![](https://natancode.com/wp-content/uploads/2024/11/image-19.png)
+![](../docker/images/docker14.webp)
 
 We make the `wait-for-it.sh` file available inside the image by specifying it in the Dockerfile.
 
@@ -180,7 +177,7 @@ services:
 
 Before running docker-compose, we need to create the API image and ensure that the wait-for-it.sh file has the correct Line Separator if you're using Windows. In IntelliJ, you can check it here.
 
-![](https://natancode.com/wp-content/uploads/2024/11/image-22.png)
+![](../docker/images/docker15.webp)
 
 Set it to LF, save the file, and build the API image. Now we can run the docker compose command.
 
@@ -188,14 +185,14 @@ Set it to LF, save the file, and build the API image. Now we can run the docker 
 docker-compose up
 ```
 
-![](https://natancode.com/wp-content/uploads/2024/11/image-20-1024x450.png)
+![](../docker/images/docker16.webp)
 
-![](https://natancode.com/wp-content/uploads/2024/11/image-21-1024x476.png)
+![](../docker/images/docker17.webp)
 
-![](https://natancode.com/wp-content/uploads/2024/11/image-24.png)
+![](../docker/images/docker18.png)
 
 When calling the endpoint, I get the result.
 
 ![](https://natancode.com/wp-content/uploads/2024/11/image-23.png)
 
-![](https://natancode.com/wp-content/uploads/2023/11/image.gif)
+![](../docker/images/docker18.webp)

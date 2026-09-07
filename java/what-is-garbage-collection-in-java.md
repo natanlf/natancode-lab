@@ -7,7 +7,6 @@ tags: ["Java", "Quarkus", "Spring"]
 ---
 It is a process that manages memory in software written in Java. When running programs on the JVM (Java Virtual Machine), objects are created in the Heap memory. When these objects are no longer needed, the Garbage Collector will find unused objects and remove them from memory, helping to prevent memory leaks.
 
-![](https://natancode.com/wp-content/uploads/2023/10/image.gif)
 
 * * *
 
@@ -15,7 +14,8 @@ We need to understand that there is the Call Stack, Stack Memory, and Heap Memor
 
 Call Stack, Stack Memory and Heap Memory
 
-![](https://natancode.com/wp-content/uploads/2024/08/Garbage-Collection-1.jpg)
+
+![](./images/Garbage-Collection-1.webp)
 
 There is Stack Memory and Heap Memory. Stack Memory contains the Call Stack.
 
@@ -29,7 +29,6 @@ In the case of the variable `x`, its value is stored in the stack memory.
 
 Example
 
-![](https://natancode.com/wp-content/uploads/2023/10/image-2.gif)
 
 I created the `Client` class.
 
@@ -84,7 +83,8 @@ public class Main {
 
 When running the `main` method, it will be on the call stack. Let's debug to see step by step what happens.
 
-![](https://natancode.com/wp-content/uploads/2024/08/call-stack-java.png)
+
+![](./images/call-stack-java.webp)
 
 * * *
 
@@ -94,22 +94,20 @@ On the left side, we see the `main` method running, and on the right side, the v
 
 We have another method in the call stack.
 
-![](https://natancode.com/wp-content/uploads/2024/08/call-stack-3-java.png)
+![](./images/call-stack-3-java.webp)
 
 * * *
 
 The variable `mary` was created within the stack memory and holds a value that is a reference to an object located in the heap memory.
 
-![](https://natancode.com/wp-content/uploads/2024/08/heap-memory-java.png)
+![](./images/heap-memory-java.webp)
 
 * * *
 
 When we finish executing the `createClient` method, it will exit the call stack, and there will no longer be a variable pointing to the object in the heap memory. At some point, the Garbage Collector (which is responsible for carrying out the Garbage Collection process) will automatically detect this and remove the object from memory. This process is known as **Garbage Collection**.
 
-![](https://natancode.com/wp-content/uploads/2024/08/call-stack-and-heap-memory-2-java.png)
+![](./images/call-stack-and-heap-memory-2-java.webp)
 
 * * *
-
-![](https://natancode.com/wp-content/uploads/2023/11/image.gif)
 
 This was an example of how it works. This management is done automatically and helps prevent memory leaks.

@@ -9,8 +9,6 @@ Sorting in Java Collections is an essential feature for organizing collection el
 
 Hands on
 
-![](https://natancode.com/wp-content/uploads/2024/12/giphy-2.webp)
-
 The following example is a list of prices that will be sorted in natural order, that is, from lowest to highest.
 
 ```
@@ -35,17 +33,14 @@ We have the following result sorted in natural order:
 
 How is this possible?
 
-![](https://natancode.com/wp-content/uploads/2025/01/giphy.webp)
-
 By using the `sort` method, we can sort the collection because **_List_** inherits from `Collection`.
 
-![](https://natancode.com/wp-content/uploads/2024/12/image-3.png)
+![](./images/sort.webp)
 
 That alone would not be enough for the sorting to work, as it is necessary to use the `Comparable` interface, which `BigDecimal` implements.
 
-![](https://natancode.com/wp-content/uploads/2024/12/image-5.png)
+![](./images/sort-2.webp)
 
-![](https://natancode.com/wp-content/uploads/2024/10/image-1.webp)
 
 To perform reverse order sorting, we also use the `Collections.sort` method. This time, it is necessary to provide a `Comparator`.
 
@@ -136,7 +131,6 @@ public record Product(String name, BigDecimal price) implements Comparable<Produ
 
 Since the `Product` record already specifies ordering by name, what happens if it is necessary to sort by another property?
 
-![](https://natancode.com/wp-content/uploads/2023/11/image-1.gif)
 
 It is not necessary to modify the record; we can use the Comparator interface as shown in the following example.
 
