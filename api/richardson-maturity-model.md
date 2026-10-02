@@ -9,7 +9,8 @@ _It is a model (developed by Leonard Richardson) to improve API maturity_.
 
 To achieve the glory of REST, the API must have maturity levels. There are 4 levels, and next we will see how each of them works.
 
-![](https://natancode.com/wp-content/uploads/2024/10/overview-Richard-Maturity-Model.png)
+
+![](./overview-Richard-Maturity-Model.webp)
 
 Level 0: The Swamp of POX
 
@@ -43,7 +44,7 @@ Among the most commonly used are:
 
 Examples:
 
-![](https://natancode.com/wp-content/uploads/2024/10/Level-2-Http-Verbs.png)
+![](./Level-2-Http-Verbs.webp)
 
 Level 3: Hypermedia Controls
 
@@ -99,8 +100,4 @@ Example:
 
 Pagination is a good example of its use, but it's not limited to that, as it returns the possible actions related to the returned resource.
 
-![](https://natancode.com/wp-content/uploads/2024/10/image-2.webp)
-
 This is how we can achieve the glory of Rest.
-
-References

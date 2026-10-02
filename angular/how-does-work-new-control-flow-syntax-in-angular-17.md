@@ -33,9 +33,7 @@ The **@if** block conditionally displays its content when its condition expres
 
 The result is:
 
-![](https://natancode.com/wp-content/uploads/2023/11/image-13-300x215.png)
-
-![](https://natancode.com/wp-content/uploads/2023/11/image-12.gif)
+![](../angular/images/block.webp)
 
 I copied the example below from the documentation, which illustrates the old way:
 
@@ -95,7 +93,7 @@ The value of the `track` expression determines a key used to associate array i
 
 The result is:
 
-![](https://natancode.com/wp-content/uploads/2023/11/image-14-276x300.png)
+![](../angular/images/for-block.webp)
 
 **@empty** block
 
@@ -118,7 +116,7 @@ items2 = new Array;
 
 The result is:
 
-![](https://natancode.com/wp-content/uploads/2023/11/image-15-300x66.png)
+![](../angular/images/empty-block.webp)
 
 **@switch** block - selection
 
@@ -147,7 +145,7 @@ month = "november";
 
 The result is:
 
-![](https://natancode.com/wp-content/uploads/2023/11/image-16-300x213.png)
+![](../angular/images/switch-block.webp)
 
 Conclusion
 

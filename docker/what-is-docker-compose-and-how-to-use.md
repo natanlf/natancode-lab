@@ -193,6 +193,6 @@ docker-compose up
 
 When calling the endpoint, I get the result.
 
-![](https://natancode.com/wp-content/uploads/2024/11/image-23.png)
+![](../docker/images/image23.webp)
 
 ![](../docker/images/docker18.webp)

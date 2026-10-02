@@ -13,7 +13,7 @@ Time complexity refers to the number of steps required to execute an algorithm.
 
 Let's look at a search example where we have an array of integers, and when a number is provided, we search for its index. If the number is not found in the array, we return -1.
 
-![](https://natancode.com/wp-content/uploads/2025/03/sequential-search-1.png)
+![](../algorithm/images/sequential-search-1.webp)
 
 Time Complexity Analysis
 
@@ -54,7 +54,6 @@ The more elements we provide, the more steps may be required. Running this algor
 
 For example, if two developers create code to solve a problem, and Developer 1 gets a response in 3 milliseconds while Developer 2 gets a response in 1 millisecond, it does not necessarily mean that Developer 2's code is better. The developer 2 might simply have a more powerful machine that processes faster. That’s why we evaluate the number of steps to determine which code is more efficient.
 
-![](https://natancode.com/wp-content/uploads/2024/10/image-1.webp)
 
 Space Complexity
 
@@ -68,7 +67,6 @@ Typically, the analysis considers the memory used by the algorithm in addition t
 
 Since the algorithm does not create additional data structures that grow with the input size, its space complexity remains constant.
 
-![](https://natancode.com/wp-content/uploads/2024/12/giphy-1fc1c917-2905-4463-8ba3-a7fdaaaa6908.webp)
 
 Conclusion
 

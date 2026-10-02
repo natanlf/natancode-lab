@@ -7,7 +7,7 @@ tags: ["Design Patterns"]
 ---
 The **Factory Method** is a creational design pattern that provides an interface for creating objects in a superclass but allows subclasses to alter the type of objects that will be created.
 
-![](https://natancode.com/wp-content/uploads/2025/01/image.png)
+![](../pattern/images/factory.webp)
 
 Image from: [https://refactoring.guru/images/patterns/diagrams/factory-method/structure.png](https://refactoring.guru/images/patterns/diagrams/factory-method/structure.png)
 
@@ -15,7 +15,7 @@ In addition to the use of polymorphism, it is possible to create either ProductA
 
 Hands on
 
-![](https://natancode.com/wp-content/uploads/2025/01/factory-method-white.drawio.png)
+![](../pattern/images/factory-2.webp)
 
 Let's start by specifying the products.
 
@@ -106,5 +106,3 @@ Client
 This way, the client doesn't need to create the concrete product; the Factory holds this responsibility.
 
 This is a flexible way to create products. If it becomes necessary to create a different type of car, we can simply add this new concrete product and create a factory for it, ensuring that the existing classes do not need to be modified.
-
-![](https://natancode.com/wp-content/uploads/2025/02/giphy.gif)

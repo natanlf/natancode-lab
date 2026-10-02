@@ -10,7 +10,8 @@ All rendering types have their own set of advantages and disadvantages; let's ex
 
 Requirements
 
-![Requirements Angular](https://natancode.com/wp-content/uploads/2023/10/requirements.png "Requirements Angular")
+
+![](../angular/images/angular-cli.png)
 
 You can find more here:
 
@@ -24,19 +25,17 @@ It is a type of rendering found in SPA (Single Page Application), the page is re
 
 I created an angular application, a SPA to be more precise. Let's see the application on the browser.
 
-[![Angular application](https://natancode.com/wp-content/uploads/2023/10/image-4.png "Angular application")](https://natancode.com/wp-content/uploads/2023/10/image-4.png)
+![](../angular/images/project.webp)
 
 Let’s go to the view page source. To see this option, just right-click on the page.
 
-[![View Page Souce](https://natancode.com/wp-content/uploads/2023/10/image-5.png "View Page Souce")](https://natancode.com/wp-content/uploads/2023/10/image-5.png)
+![](../angular/images/html-project.webp)
 
 Where is the content ?
 
-![](https://natancode.com/wp-content/uploads/2023/11/image-1.gif)
-
 This happens because the application is running on the client side. The browser receives the files and renders the page on the client side.
 
-[![Inspect Browser](https://natancode.com/wp-content/uploads/2023/10/image-7.png "Inspect Browser")](https://natancode.com/wp-content/uploads/2023/10/image-7.png)
+![](../angular/images/network.webp)
 
 Server-Side Rendering (SSR)
 
@@ -56,9 +55,8 @@ npm run dev:ssr
 
 When you run the above command, it indicates that you are using a Node.js server, enabling server-side rendering. You can verify this by going to the "View Page Source" option, as previously demonstrated.
 
-[![View Page Source](https://natancode.com/wp-content/uploads/2023/10/image-8.png "View Page Source")](https://natancode.com/wp-content/uploads/2023/10/image-8.png)
+![](../angular/images/ng-generate.png)
 
-![](https://natancode.com/wp-content/uploads/2023/11/image.gif)
 
 The rendering process takes place on the server, allowing you to view the content this time.
 
@@ -83,7 +81,7 @@ npm run prerender
 
 After running this command, you may wonder, "Where are the product detail pages?"
 
-[![prerender](https://natancode.com/wp-content/uploads/2023/11/image.png)](https://natancode.com/wp-content/uploads/2023/11/image.png)
+![](../angular/images/files.webp)
 
 It's necessary to specify the routes of products. We can specify in a file or only in a command.
 
@@ -106,7 +104,7 @@ The file routes.txt is in root folder and has this content:
 
 types-of-rendering-angular is the name of application.
 
-[![Static Site Generator (SSG)](https://natancode.com/wp-content/uploads/2023/11/image-1.png)](https://natancode.com/wp-content/uploads/2023/11/image-1.png)
+![](../angular/images/types-rendering.webp)
 
 Conclusion
 

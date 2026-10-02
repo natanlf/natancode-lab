@@ -136,8 +136,6 @@ app.component.html
 
 This way we can call it in the HTML.
 
-![](https://natancode.com/wp-content/uploads/2024/07/directive-angular.gif)
+![](../angular/images/directive-angular.gif)
 
-* * *
 
-![](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnZhc3hmazJpcjJxanI5NW56cHZhMGZuNXM5c2NzOXlmdDI2aXZycCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o6Mb4iDo3ne2U3M0o/giphy.webp)

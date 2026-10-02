@@ -9,8 +9,6 @@ One day I was talking to a friend who is learning programming. I suggested solvi
 
 Hands on
 
-![](https://natancode.com/wp-content/uploads/2025/01/giphy.webp)
-
 First Approach (Using `StringBuilder`)
 
 ```
@@ -135,8 +133,6 @@ In-place comparison (no extra string)
 More memory-efficient
 
 With the use of two pointers, it's also important to note that in some cases, it's not necessary to iterate through every character. This results in faster processing since the number of steps is reduced. On the other hand, with `StringBuilder`, this optimization doesn't occur, as it's always necessary to reverse the entire string to perform the comparison.
-
-![](https://natancode.com/wp-content/uploads/2023/11/image.gif)
 
 Conclusion
 
